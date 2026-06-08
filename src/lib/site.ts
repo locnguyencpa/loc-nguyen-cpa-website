@@ -8,43 +8,43 @@ export const site = {
 
 export const services = [
   {
-    title: "Individual tax returns",
+    title: "Individual Tax Returns",
     description:
       "Federal and state tax preparation for professionals, families, investors, and taxpayers with complex reporting.",
     tag: "Form 1040",
   },
   {
-    title: "Equity compensation",
+    title: "Equity Compensation",
     description:
       "Tax planning and return preparation for RSUs, ISOs, NSOs, ESPPs, and multi-state equity activity.",
     tag: "Startup employees",
   },
   {
-    title: "Startup & C corporation tax",
+    title: "Startup & C-Corporation Tax",
     description:
       "Form 1120 compliance, founder-level coordination, and practical tax guidance for growing companies.",
     tag: "Form 1120",
   },
   {
-    title: "R&D tax credits",
+    title: "R&D Tax Credits",
     description:
       "Form 6765 analysis and preparation for qualifying startups, including engineering and AI companies investing in product development.",
     tag: "Form 6765",
   },
   {
-    title: "Penalty abatement",
+    title: "Penalty Abatement",
     description:
       "Reasonable-cause analysis and abatement support for select partnership, Forms 5471 and 5472, and state late-filing penalties.",
     tag: "Federal & state",
   },
   {
-    title: "Delaware franchise tax",
+    title: "Delaware Franchise Tax",
     description:
       "Annual report and franchise tax filing support for Delaware corporations, including authorized-share method review.",
     tag: "Annual filing",
   },
   {
-    title: "Tax planning & notices",
+    title: "Tax Planning & Notices",
     description:
       "Proactive estimates, withholding reviews, and clear support for federal and state tax notices.",
     tag: "Year-round",

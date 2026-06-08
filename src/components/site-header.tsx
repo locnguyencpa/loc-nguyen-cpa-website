@@ -13,15 +13,15 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-navy/10 bg-cream/90 backdrop-blur-xl">
       <div className="shell flex h-20 items-center justify-between">
-        <Link href="/" className="flex items-center gap-3" aria-label="Loc Nguyen CPA home">
-          <span className="grid size-10 place-items-center rounded-full bg-navy text-sm font-bold tracking-wide text-white">
+        <Link href="/" className="brand-link flex items-center gap-3" aria-label="Loc Nguyen CPA home">
+          <span className="brand-mark grid size-10 place-items-center rounded-full bg-navy text-sm font-bold tracking-wide text-white">
             LN
           </span>
-          <span>
-            <span className="block font-serif text-lg font-semibold leading-none text-navy">
+          <span className="brand-copy">
+            <span className="brand-name block font-serif text-lg font-semibold leading-none text-navy">
               Loc Nguyen
             </span>
-            <span className="mt-1 block text-[10px] font-bold uppercase tracking-[0.24em] text-teal">
+            <span className="brand-subtitle mt-1 block text-[10px] font-bold uppercase tracking-[0.24em] text-teal">
               Certified Public Accountant
             </span>
           </span>

@@ -2,8 +2,8 @@ import Link from "next/link";
 import { faqs, services, site, testimonials } from "@/lib/site";
 
 const people = [
-  ["01", "Professionals with equity", "RSUs, ISOs, NSOs, ESPPs, and concentrated stock positions."],
-  ["02", "Startup founders", "Early-stage decisions, business returns, and owner tax coordination."],
+  ["01", "Professionals with Equity", "RSUs, ISOs, NSOs, ESPPs, and concentrated stock positions."],
+  ["02", "Startup Founders", "Early-stage decisions, business returns, and owner tax coordination."],
   ["03", "Small business owners", "Practical compliance and planning without unnecessary complexity."],
 ];
 
