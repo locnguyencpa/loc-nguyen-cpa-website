@@ -53,23 +53,24 @@ export const services = [
 
 export const pricing = [
   {
-    name: "Individual Essential",
-    price: "$650",
-    description: "A straightforward federal and one-state individual return.",
+    name: "Basic",
+    price: "$350",
+    description: "For a single filer with one W-2, one state, and no other income.",
     features: [
       "Form 1040 preparation",
-      "W-2 and standard investment income",
+      "Single filing status",
+      "One W-2",
       "One state return",
+      "No other types of income",
       "Electronic filing",
-      "30-minute results review",
     ],
   },
   {
     name: "Equity & Investor",
-    price: "$1,250",
+    price: "$1,350",
     description: "For professionals with stock compensation or added complexity.",
     features: [
-      "Everything in Individual Essential",
+      "Everything in Basic",
       "RSUs, ISOs, NSOs, or ESPPs",
       "Stock transaction basis review",
       "Alternative minimum tax review",
@@ -106,7 +107,7 @@ export const pricing = [
 
 export const faqs = [
   {
-    question: "Do you work with clients outside Florida?",
+    question: "Do you work with clients outside California?",
     answer:
       "Yes. Most work can be completed remotely. State-specific complexity and professional licensing requirements are reviewed before an engagement is accepted.",
   },
@@ -152,6 +153,12 @@ export const testimonials = [
   {
     quote: "Appreciate the help as always.",
     name: "Technology company owner",
+    company: "Name withheld for privacy",
+  },
+  {
+    quote:
+      "Thanks Loc, the letter looks great and clearly you have good experience in expediting these things.",
+    name: "International Startup Founder",
     company: "Name withheld for privacy",
   },
 ];

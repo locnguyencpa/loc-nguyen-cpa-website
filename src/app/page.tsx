@@ -4,7 +4,7 @@ import { faqs, services, site, testimonials } from "@/lib/site";
 const people = [
   ["01", "Professionals with Equity", "RSUs, ISOs, NSOs, ESPPs, and concentrated stock positions."],
   ["02", "Startup Founders", "Early-stage decisions, business returns, and owner tax coordination."],
-  ["03", "Small business owners", "Practical compliance and planning without unnecessary complexity."],
+  ["03", "Small Business Owners", "Practical compliance and planning without unnecessary complexity."],
 ];
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
           <div className="relative z-10">
             <div className="eyebrow">Clarity for complex tax situations</div>
             <h1 className="mt-6 max-w-3xl font-serif text-6xl leading-[.98] tracking-[-.045em] text-navy sm:text-7xl">
-              Your taxes deserve more than a checklist.
+              Never Worry About Taxes Again
             </h1>
             <p className="mt-7 max-w-xl text-lg leading-8 text-slate">
               Thoughtful tax preparation and proactive guidance for equity-compensated
@@ -56,11 +56,11 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4 p-4 pb-2 pt-5">
                 <div className="rounded-xl bg-sage p-5">
                   <div className="text-xs font-bold uppercase tracking-wider text-teal">Experience</div>
-                  <div className="mt-2 font-serif text-2xl text-navy">CPA practice + IRS</div>
+                  <div className="mt-2 font-serif text-2xl text-navy">CPA Practice + IRS</div>
                 </div>
                 <div className="rounded-xl border border-navy/10 p-5">
                   <div className="text-xs font-bold uppercase tracking-wider text-slate">Focus</div>
-                  <div className="mt-2 font-serif text-2xl text-navy">People & businesses</div>
+                  <div className="mt-2 font-serif text-2xl text-navy">People & Businesses</div>
                 </div>
               </div>
             </div>
