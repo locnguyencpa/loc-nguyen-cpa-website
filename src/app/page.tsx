@@ -101,6 +101,11 @@ export default function Home() {
                 <span className="pill">{service.tag}</span>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
+                {"href" in service && service.href && (
+                  <Link href={service.href} className="text-link mt-5 inline-flex">
+                    See notice response service →
+                  </Link>
+                )}
               </article>
             ))}
           </div>
@@ -161,7 +166,7 @@ export default function Home() {
               plain-English answers and a goal of responding within one business day.
             </p>
             <div className="mt-8 grid gap-4">
-              {["Direct access to your CPA", "More than $140,000 in penalties abated across matters", "Clear updates without the communication vacuum"].map((item) => (
+              {["Direct access to your CPA", "More than $200,000 in penalties abated across matters", "Clear updates without the communication vacuum"].map((item) => (
                 <div key={item} className="check font-semibold text-navy">{item}</div>
               ))}
             </div>

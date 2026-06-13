@@ -32,10 +32,11 @@ export const services = [
     tag: "Form 6765",
   },
   {
-    title: "Penalty Abatement",
+    title: "IRS Notice Response",
     description:
-      "Reasonable-cause analysis and abatement support for select partnership, Forms 5471 and 5472, and state late-filing penalties.",
-    tag: "Federal & state",
+      "Review, response preparation, submission, and IRS follow-up for straightforward federal and state tax notices.",
+    tag: "$250 per hour",
+    href: "/irs-notice-help",
   },
   {
     title: "Delaware Franchise Tax",
@@ -88,19 +89,21 @@ export const pricing = [
       "Year-end bookkeeping review",
       "Owner tax coordination",
       "Tax planning meeting",
+      "Delaware franchise tax filing support",
     ],
   },
   {
     name: "Specialty Advisory",
-    price: "Custom",
+    price: "$250/hr",
     description:
-      "Focused projects priced hourly or by a clearly defined scope.",
+      "IRS notice response and focused specialty projects with an estimate before work begins.",
     features: [
+      "Review and explain an IRS or state notice",
+      "Authorization, response, exhibits, and submission",
+      "IRS contact by phone, fax, or mail",
       "R&D tax credit and Form 6765",
       "Penalty-abatement requests",
-      "Tax notice response",
-      "Delaware franchise tax",
-      "Written scope before work begins",
+      "Approval before materially exceeding the estimate",
     ],
   },
 ];
