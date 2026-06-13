@@ -68,6 +68,23 @@ const faqs = [
 ];
 
 export default function IRSNoticeHelpPage() {
+  const noticeEmailUrl = `mailto:${site.email}?subject=${encodeURIComponent(
+    "Request for IRS notice review",
+  )}&body=${encodeURIComponent(
+    `Hi Loc,
+
+I would like help with a tax notice.
+
+Notice number:
+Tax year or period:
+Response deadline:
+Best phone number:
+
+Brief description:
+
+I understand that I should not attach sensitive tax documents to this email.`,
+  )}`;
+
   return (
     <>
       <section className="hero overflow-hidden">
@@ -83,9 +100,7 @@ export default function IRSNoticeHelpPage() {
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a
-                href={site.intakeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={noticeEmailUrl}
                 className="button button-primary"
               >
                 Request a notice review <span>→</span>
@@ -199,9 +214,7 @@ export default function IRSNoticeHelpPage() {
             <div className="mt-4 font-serif text-6xl text-navy">$250</div>
             <div className="mt-2 text-slate">per hour</div>
             <a
-              href={site.intakeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={noticeEmailUrl}
               className="button button-primary mt-9 justify-center"
             >
               Request a notice review
@@ -238,9 +251,7 @@ export default function IRSNoticeHelpPage() {
             Do not send sensitive tax documents through ordinary email.
           </p>
           <a
-            href={site.intakeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={noticeEmailUrl}
             className="button bg-white text-navy"
           >
             Request a notice review
