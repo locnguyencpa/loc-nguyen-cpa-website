@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 
@@ -14,8 +15,15 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-navy/10 bg-cream/90 backdrop-blur-xl">
       <div className="shell flex h-20 items-center justify-between">
         <Link href="/" className="brand-link flex items-center gap-3" aria-label="Loc Nguyen CPA home">
-          <span className="brand-mark grid size-10 place-items-center rounded-full bg-navy text-sm font-bold tracking-wide text-white">
-            LN
+          <span className="brand-mark relative size-12 flex-none overflow-hidden rounded-full">
+            <Image
+              src="/loc-nguyen-portrait-transparent.png"
+              alt=""
+              fill
+              sizes="48px"
+              className="object-cover"
+              priority
+            />
           </span>
           <span className="brand-copy">
             <span className="brand-name block font-serif text-lg font-semibold leading-none text-navy">

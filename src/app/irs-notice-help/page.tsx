@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { TallyPopupButton } from "@/components/tally-popup-button";
 
 export const metadata: Metadata = {
   title: "IRS Notice Response Help",
@@ -68,23 +68,6 @@ const faqs = [
 ];
 
 export default function IRSNoticeHelpPage() {
-  const noticeEmailUrl = `mailto:${site.email}?subject=${encodeURIComponent(
-    "Request for IRS notice review",
-  )}&body=${encodeURIComponent(
-    `Hi Loc,
-
-I would like help with a tax notice.
-
-Notice number:
-Tax year or period:
-Response deadline:
-Best phone number:
-
-Brief description:
-
-I understand that I should not attach sensitive tax documents to this email.`,
-  )}`;
-
   return (
     <>
       <section className="hero overflow-hidden">
@@ -99,12 +82,9 @@ I understand that I should not attach sensitive tax documents to this email.`,
               response, submission, and IRS contact can all be handled in one place.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <a
-                href={noticeEmailUrl}
-                className="button button-primary"
-              >
+              <TallyPopupButton className="button button-primary">
                 Request a notice review <span>→</span>
-              </a>
+              </TallyPopupButton>
               <a href="#pricing" className="button button-secondary">
                 See pricing
               </a>
@@ -213,12 +193,9 @@ I understand that I should not attach sensitive tax documents to this email.`,
             </div>
             <div className="mt-4 font-serif text-6xl text-navy">$250</div>
             <div className="mt-2 text-slate">per hour</div>
-            <a
-              href={noticeEmailUrl}
-              className="button button-primary mt-9 justify-center"
-            >
+            <TallyPopupButton className="button button-primary mt-9 justify-center">
               Request a notice review
-            </a>
+            </TallyPopupButton>
           </div>
         </div>
       </section>
@@ -250,12 +227,9 @@ I understand that I should not attach sensitive tax documents to this email.`,
             Share the notice number, tax period, amount, and response deadline.
             Do not send sensitive tax documents through ordinary email.
           </p>
-          <a
-            href={noticeEmailUrl}
-            className="button bg-white text-navy"
-          >
+          <TallyPopupButton className="button bg-white text-navy">
             Request a notice review
-          </a>
+          </TallyPopupButton>
           <div className="mt-6">
             <Link href="/services" className="text-sm font-semibold text-white/75 underline">
               View all CPA services
