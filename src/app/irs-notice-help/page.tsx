@@ -19,11 +19,6 @@ const audiences = [
     title: "Business owners",
     text: "Information-return, entity, deposit, filing, and administrative notices that need a clear response.",
   },
-  {
-    number: "03",
-    title: "Startup founders",
-    text: "Tax correspondence arriving during provider changes, fundraising, shutdowns, or fast-moving compliance work.",
-  },
 ];
 
 const stages = [
@@ -124,7 +119,7 @@ export default function IRSNoticeHelpPage() {
             <div className="eyebrow">Who this is for</div>
             <h2>For people who want the notice handled, not another project to manage.</h2>
           </div>
-          <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-navy/10 bg-navy/10 lg:grid-cols-3">
+          <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-navy/10 bg-navy/10 lg:grid-cols-2">
             {audiences.map((audience) => (
               <article key={audience.title} className="bg-white p-8 sm:p-10">
                 <div className="font-mono text-xs font-bold text-teal">{audience.number}</div>

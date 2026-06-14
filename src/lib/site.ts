@@ -76,19 +76,17 @@ export const pricing = [
       "Stock transaction basis review",
       "Alternative minimum tax review",
       "Quarterly estimate guidance",
+      "Tax planning meeting",
     ],
     featured: true,
   },
   {
-    name: "Business & Founder",
-    price: "$2,500",
-    description: "Business return preparation with owner-level coordination.",
+    name: "Corporation Tax Return",
+    price: "$1,450",
+    description: "Corporate tax return preparation for C corporations.",
     features: [
       "Form 1120 preparation",
       "Federal and one state return",
-      "Year-end bookkeeping review",
-      "Owner tax coordination",
-      "Tax planning meeting",
       "Delaware franchise tax filing support",
     ],
   },
@@ -98,12 +96,9 @@ export const pricing = [
     description:
       "IRS notice response and focused specialty projects with an estimate before work begins.",
     features: [
-      "Review and explain an IRS or state notice",
-      "Authorization, response, exhibits, and submission",
-      "IRS contact by phone, fax, or mail",
+      "IRS/State notice resolution support",
       "R&D tax credit and Form 6765",
-      "Penalty-abatement requests",
-      "Approval before materially exceeding the estimate",
+      "Advance approval if work is expected to exceed the estimate",
     ],
   },
 ];
