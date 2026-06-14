@@ -18,7 +18,10 @@ export default function ServicesPage() {
               <p className="mt-4 leading-7 text-slate">{service.description}</p>
               {"href" in service && service.href && (
                 <Link href={service.href} className="text-link mt-6 inline-flex">
-                  Learn how notice response works →
+                  {"linkLabel" in service && service.linkLabel
+                    ? service.linkLabel
+                    : "Learn how notice response works"}{" "}
+                  →
                 </Link>
               )}
             </article>

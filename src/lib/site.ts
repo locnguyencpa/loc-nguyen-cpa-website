@@ -50,6 +50,14 @@ export const services = [
       "Proactive estimates, withholding reviews, and clear support for federal and state tax notices.",
     tag: "Year-round",
   },
+  {
+    title: "Bookkeeping",
+    description:
+      "Monthly, quarterly, or annual bookkeeping support based on your business activity and reporting needs.",
+    tag: "Business records",
+    href: "/bookkeeping-pricing",
+    linkLabel: "See bookkeeping pricing",
+  },
 ];
 
 export const pricing = [

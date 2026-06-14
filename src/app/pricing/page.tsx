@@ -5,8 +5,14 @@ import Link from "next/link";
 export default function PricingPage() {
   return (
     <>
-      <PageHero eyebrow="Transparent starting points" title="Clear fees before the work begins." description="Every tax situation is different. These starting prices help set expectations; your written quote confirms the final scope and fee." />
+      <PageHero eyebrow="Transparent starting points" title="Clear fees before the work begins." description="Every engagement is different. These starting prices help set expectations; your written quote confirms the final scope and fee." />
       <section className="section bg-white">
+        <div className="shell mb-10">
+          <div className="eyebrow">Tax Services</div>
+          <h2 className="mt-4 max-w-2xl font-serif text-4xl text-navy">
+            Tax preparation and specialty support.
+          </h2>
+        </div>
         <div className="shell grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {pricing.map((tier) => (
             <article key={tier.name} className={`pricing-card ${tier.featured ? "featured" : ""}`}>
@@ -40,7 +46,13 @@ export default function PricingPage() {
             </article>
           ))}
         </div>
-        <div className="shell mt-8">
+        <div className="shell mb-10 mt-20">
+          <div className="eyebrow">Bookkeeping Services</div>
+          <h2 className="mt-4 max-w-2xl font-serif text-4xl text-navy">
+            Separate pricing for ongoing business records.
+          </h2>
+        </div>
+        <div className="shell">
           <article className="bookkeeping-pricing-card">
             <div>
               <span className="pill">Monthly, quarterly, or annual</span>
@@ -52,7 +64,7 @@ export default function PricingPage() {
             </div>
             <div className="bookkeeping-pricing-action">
               <span>First year from</span>
-              <strong>$499</strong>
+              <strong>$850</strong>
               <Link href="/bookkeeping-pricing" className="button button-secondary justify-center">
                 See pricing
               </Link>
