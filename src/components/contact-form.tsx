@@ -38,7 +38,6 @@ export function ContactForm({ quote = false }: { quote?: boolean }) {
           <select name="service" defaultValue="">
             <option value="" disabled>Select a service</option>
             <option>Individual tax return</option>
-            <option>Equity compensation</option>
             <option>Business tax return</option>
             <option>Penalty or tax notice</option>
             <option>Tax planning</option>

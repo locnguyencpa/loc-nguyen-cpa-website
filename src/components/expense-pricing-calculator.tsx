@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import {
   bookkeepingFrequencyDetails,
@@ -9,7 +10,6 @@ import {
   type BookkeepingFrequency,
   type PricingTier,
 } from "@/lib/expense-pricing";
-import { site } from "@/lib/site";
 
 const currency = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -128,14 +128,12 @@ export function ExpensePricingCalculator(props: CalculatorProps) {
                 the intake form for a custom scope and quote.
               </p>
             </div>
-            <a
-              href={site.intakeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contact"
               className="button button-primary justify-center"
             >
-              Request a custom quote
-            </a>
+              Request a Custom Quote
+            </Link>
           </>
         ) : (
           <>

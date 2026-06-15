@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { site } from "@/lib/site";
+import { PersonalTaxQuoteButton } from "@/components/personal-tax-quote-button";
 
 const nav = [
   ["Services", "/services"],
@@ -50,14 +50,10 @@ export function SiteHeader() {
               ))}
             </nav>
           </details>
-          <a
-            href={site.intakeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button button-primary px-4 py-3 text-sm sm:px-5"
-          >
-            Get a quote
-          </a>
+          <PersonalTaxQuoteButton className="button button-primary px-4 py-3 text-sm sm:px-5">
+            <span className="sm:hidden">Tax Quote</span>
+            <span className="hidden sm:inline">Personal Tax Quote</span>
+          </PersonalTaxQuoteButton>
         </div>
       </div>
     </header>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PersonalTaxQuoteButton } from "@/components/personal-tax-quote-button";
 import { site } from "@/lib/site";
 
 export function SiteFooter() {
@@ -27,7 +28,9 @@ export function SiteFooter() {
         <div>
           <div className="footer-title">Start here</div>
           <div className="mt-4 grid gap-3 text-sm text-white/70">
-            <a href={site.intakeUrl} target="_blank" rel="noopener noreferrer">Request a quote</a>
+            <PersonalTaxQuoteButton className="text-left">
+              Personal Tax Quote
+            </PersonalTaxQuoteButton>
             <Link href="/contact">Contact</Link>
             <Link href="/privacy">Privacy policy</Link>
             <Link href="/terms">Terms of use</Link>

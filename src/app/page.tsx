@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { faqs, services, site, testimonials } from "@/lib/site";
+import { PersonalTaxQuoteButton } from "@/components/personal-tax-quote-button";
+import { faqs, services, testimonials } from "@/lib/site";
 
 const people = [
   ["01", "Professionals with Equity", "RSUs, ISOs, NSOs, ESPPs, and concentrated stock positions."],
-  ["02", "Startup Founders", "Early-stage decisions, business returns, and owner tax coordination."],
+  ["02", "Startup Founders", "C corporation compliance, Delaware franchise tax, and practical tax guidance."],
   ["03", "Small Business Owners", "Practical compliance and planning without unnecessary complexity."],
 ];
 
@@ -23,7 +24,9 @@ export default function Home() {
               communication that keeps you informed.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <a href={site.intakeUrl} target="_blank" rel="noopener noreferrer" className="button button-primary">Request a quote <span>→</span></a>
+              <PersonalTaxQuoteButton className="button button-primary">
+                Get a Personal Tax Quote <span>→</span>
+              </PersonalTaxQuoteButton>
               <Link href="/services" className="button button-secondary">Explore services</Link>
             </div>
             <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm font-semibold text-navy/70">
@@ -103,7 +106,10 @@ export default function Home() {
                 <p>{service.description}</p>
                 {"href" in service && service.href && (
                   <Link href={service.href} className="text-link mt-5 inline-flex">
-                    See notice response service →
+                    {"linkLabel" in service && service.linkLabel
+                      ? service.linkLabel
+                      : "Learn more"}{" "}
+                    →
                   </Link>
                 )}
               </article>
@@ -199,7 +205,9 @@ export default function Home() {
             <p className="text-sm font-bold uppercase tracking-[.2em] text-mint">Ready for a clearer next step?</p>
             <h2 className="mt-4 font-serif text-4xl sm:text-5xl">Let’s talk about your taxes.</h2>
           </div>
-          <a href={site.intakeUrl} target="_blank" rel="noopener noreferrer" className="button bg-white text-navy hover:bg-mint">Request a quote <span>→</span></a>
+          <PersonalTaxQuoteButton className="button bg-white text-navy hover:bg-mint">
+            Get a Personal Tax Quote <span>→</span>
+          </PersonalTaxQuoteButton>
         </div>
       </section>
     </>

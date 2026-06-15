@@ -1,5 +1,5 @@
 import { PageHero } from "@/components/page-hero";
-import { services, site } from "@/lib/site";
+import { services } from "@/lib/site";
 import Link from "next/link";
 
 export default function ServicesPage() {
@@ -28,7 +28,7 @@ export default function ServicesPage() {
           ))}
         </div>
       </section>
-      <section className="cta"><div className="shell"><h2>Not sure which service fits?</h2><p>Share a few details and I’ll help identify the right starting point.</p><a href={site.intakeUrl} target="_blank" rel="noopener noreferrer" className="button bg-white text-navy">Request a quote</a></div></section>
+      <section className="cta"><div className="shell"><h2>Not sure which service fits?</h2><p>Share a few details and I’ll help identify the right starting point.</p><Link href="/contact" className="button bg-white text-navy">Contact About a Service</Link></div></section>
     </>
   );
 }

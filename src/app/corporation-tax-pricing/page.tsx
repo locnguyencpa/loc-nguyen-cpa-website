@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ExpensePricingCalculator } from "@/components/expense-pricing-calculator";
 import { PageHero } from "@/components/page-hero";
-import { site } from "@/lib/site";
 
 export default function CorporationTaxPricingPage() {
   return (
@@ -45,14 +44,12 @@ export default function CorporationTaxPricingPage() {
         <div className="shell">
           <h2>Ready for a written quote?</h2>
           <p>Tell me about the company and receive a confirmed scope before work begins.</p>
-          <a
-            href={site.intakeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/contact"
             className="button bg-white text-navy hover:bg-mint"
           >
-            Request a quote
-          </a>
+            Request a Quote
+          </Link>
         </div>
       </section>
     </>

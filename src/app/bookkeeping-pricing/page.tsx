@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ExpensePricingCalculator } from "@/components/expense-pricing-calculator";
 import { PageHero } from "@/components/page-hero";
-import { site } from "@/lib/site";
 
 export default function BookkeepingPricingPage() {
   return (
@@ -46,14 +45,12 @@ export default function BookkeepingPricingPage() {
         <div className="shell">
           <h2>Need bookkeeping support?</h2>
           <p>Complete the intake form for a confirmed scope and quote.</p>
-          <a
-            href={site.intakeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/contact"
             className="button bg-white text-navy hover:bg-mint"
           >
-            Request a quote
-          </a>
+            Request a Quote
+          </Link>
         </div>
       </section>
     </>

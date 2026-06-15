@@ -2,18 +2,26 @@
 
 import { useEffect, useId, useState, type ReactNode } from "react";
 
-const tallyEmbedUrl =
-  "https://tally.so/embed/MeGLOX?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1";
-const tallyFormUrl = "https://tally.so/r/MeGLOX";
-
 type TallyPopupButtonProps = {
   children: ReactNode;
   className: string;
+  embedUrl?: string;
+  formUrl?: string;
+  eyebrow?: string;
+  title?: string;
+  iframeTitle?: string;
+  closeLabel?: string;
 };
 
 export function TallyPopupButton({
   children,
   className,
+  embedUrl = "https://tally.so/embed/MeGLOX?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1",
+  formUrl = "https://tally.so/r/MeGLOX",
+  eyebrow = "IRS and state notice help",
+  title = "Request a notice review",
+  iframeTitle = "Request an IRS notice review",
+  closeLabel = "Close notice review form",
 }: TallyPopupButtonProps) {
   const [isOpen, setIsOpen] = useState(false);
   const titleId = useId();
@@ -58,15 +66,15 @@ export function TallyPopupButton({
             <div className="flex items-center justify-between border-b border-navy/10 px-5 py-4 sm:px-6">
               <div>
                 <div className="text-xs font-bold uppercase tracking-[.16em] text-teal">
-                  IRS and state notice help
+                  {eyebrow}
                 </div>
                 <h2 id={titleId} className="mt-1 font-serif text-2xl text-navy">
-                  Request a notice review
+                  {title}
                 </h2>
               </div>
               <button
                 type="button"
-                aria-label="Close notice review form"
+                aria-label={closeLabel}
                 className="grid size-10 place-items-center rounded-full border border-navy/15 text-2xl leading-none text-navy hover:bg-sage"
                 onClick={() => setIsOpen(false)}
               >
@@ -75,8 +83,8 @@ export function TallyPopupButton({
             </div>
 
             <iframe
-              src={tallyEmbedUrl}
-              title="Request an IRS notice review"
+              src={embedUrl}
+              title={iframeTitle}
               className="min-h-0 flex-1 border-0"
               allow="clipboard-write"
             />
@@ -84,7 +92,7 @@ export function TallyPopupButton({
             <div className="border-t border-navy/10 px-5 py-3 text-center text-xs text-slate">
               Trouble viewing the form?{" "}
               <a
-                href={tallyFormUrl}
+                href={formUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-bold text-teal underline"

@@ -16,13 +16,13 @@ export const services = [
   {
     title: "Equity Compensation",
     description:
-      "Tax planning and return preparation for RSUs, ISOs, NSOs, ESPPs, and multi-state equity activity.",
-    tag: "Startup employees",
+      "Tax planning and return preparation for RSUs, ISOs, NSOs, and ESPPs.",
+    tag: "Tax Planning",
   },
   {
-    title: "Startup & C-Corporation Tax",
+    title: "Corporation Tax",
     description:
-      "Form 1120 compliance, founder-level coordination, and practical tax guidance for growing companies.",
+      "Form 1120 compliance, Delaware franchise tax support, and practical tax guidance for growing companies.",
     tag: "Form 1120",
   },
   {
@@ -32,31 +32,26 @@ export const services = [
     tag: "Form 6765",
   },
   {
-    title: "IRS Notice Response",
+    title: "$250 per hour",
     description:
       "Review, response preparation, submission, and IRS follow-up for straightforward federal and state tax notices.",
-    tag: "$250 per hour",
+    tag: "IRS/State Notice Review",
     href: "/irs-notice-help",
+    linkLabel: "See notice response service",
   },
   {
-    title: "Delaware Franchise Tax",
+    title: "Bookkeeping Services",
     description:
-      "Annual report and franchise tax filing support for Delaware corporations, including authorized-share method review.",
-    tag: "Annual filing",
+      "Bookkeeping support scaled to your business activity, reporting schedule, and year-end tax needs.",
+    tag: "Monthly, Quarterly, or Annual",
+    href: "/bookkeeping-pricing",
+    linkLabel: "See bookkeeping pricing",
   },
   {
     title: "Tax Planning & Notices",
     description:
       "Proactive estimates, withholding reviews, and clear support for federal and state tax notices.",
     tag: "Year-round",
-  },
-  {
-    title: "Bookkeeping",
-    description:
-      "Monthly, quarterly, or annual bookkeeping support based on your business activity and reporting needs.",
-    tag: "Business records",
-    href: "/bookkeeping-pricing",
-    linkLabel: "See bookkeeping pricing",
   },
 ];
 
@@ -83,7 +78,6 @@ export const pricing = [
       "RSUs, ISOs, NSOs, or ESPPs",
       "Stock transaction basis review",
       "Alternative minimum tax review",
-      "Quarterly estimate guidance",
       "Tax planning meeting",
     ],
     featured: true,

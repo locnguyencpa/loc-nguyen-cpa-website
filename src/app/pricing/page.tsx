@@ -1,5 +1,6 @@
 import { PageHero } from "@/components/page-hero";
-import { pricing, site } from "@/lib/site";
+import { PersonalTaxQuoteButton } from "@/components/personal-tax-quote-button";
+import { pricing } from "@/lib/site";
 import Link from "next/link";
 
 export default function PricingPage() {
@@ -41,7 +42,9 @@ export default function PricingPage() {
                   See pricing
                 </Link>
               ) : (
-                <a href={site.intakeUrl} target="_blank" rel="noopener noreferrer" className={`button mt-9 justify-center ${tier.featured ? "button-primary" : "button-secondary"}`}>Get a custom quote</a>
+                <PersonalTaxQuoteButton className={`button mt-9 justify-center ${tier.featured ? "button-primary" : "button-secondary"}`}>
+                  Get a Personal Tax Quote
+                </PersonalTaxQuoteButton>
               )}
             </article>
           ))}
