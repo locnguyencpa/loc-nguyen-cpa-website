@@ -1,4 +1,5 @@
 import { PageHero } from "@/components/page-hero";
+import { PersonalTaxQuoteButton } from "@/components/personal-tax-quote-button";
 import { services } from "@/lib/site";
 import Link from "next/link";
 
@@ -16,6 +17,11 @@ export default function ServicesPage() {
               </div>
               <h2 className="mt-10 font-serif text-3xl text-navy">{service.title}</h2>
               <p className="mt-4 leading-7 text-slate">{service.description}</p>
+              {"action" in service && service.action === "personalTaxQuote" && (
+                <PersonalTaxQuoteButton className="text-link mt-6 inline-flex">
+                  {service.linkLabel} →
+                </PersonalTaxQuoteButton>
+              )}
               {"href" in service && service.href && (
                 <Link href={service.href} className="text-link mt-6 inline-flex">
                   {"linkLabel" in service && service.linkLabel

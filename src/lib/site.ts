@@ -12,18 +12,24 @@ export const services = [
     description:
       "Federal and state tax preparation for professionals, families, investors, and taxpayers with complex reporting.",
     tag: "Form 1040",
+    action: "personalTaxQuote",
+    linkLabel: "Personal Tax Quote",
   },
   {
     title: "Equity Compensation",
     description:
       "Tax planning and return preparation for RSUs, ISOs, NSOs, and ESPPs.",
     tag: "Tax Planning",
+    action: "personalTaxQuote",
+    linkLabel: "Personal Tax Quote",
   },
   {
     title: "Corporation Tax",
     description:
       "Form 1120 compliance, Delaware franchise tax support, and practical tax guidance for growing companies.",
     tag: "Form 1120",
+    href: "/corporation-tax-pricing",
+    linkLabel: "See corporate tax pricing",
   },
   {
     title: "R&D Tax Credits",
@@ -32,7 +38,7 @@ export const services = [
     tag: "Form 6765",
   },
   {
-    title: "$250 per hour",
+    title: "Penalty Relief Requests",
     description:
       "Review, response preparation, submission, and IRS follow-up for straightforward federal and state tax notices.",
     tag: "IRS/State Notice Review",

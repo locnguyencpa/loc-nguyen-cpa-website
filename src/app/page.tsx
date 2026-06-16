@@ -104,6 +104,11 @@ export default function Home() {
                 <span className="pill">{service.tag}</span>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
+                {"action" in service && service.action === "personalTaxQuote" && (
+                  <PersonalTaxQuoteButton className="text-link mt-5 inline-flex">
+                    {service.linkLabel} →
+                  </PersonalTaxQuoteButton>
+                )}
                 {"href" in service && service.href && (
                   <Link href={service.href} className="text-link mt-5 inline-flex">
                     {"linkLabel" in service && service.linkLabel
