@@ -8,8 +8,8 @@ export default function Home() {
       <section className="hero overflow-hidden">
         <div className="shell grid min-h-[720px] items-center gap-16 py-20 lg:grid-cols-[1.1fr_.9fr]">
           <div className="relative z-10">
-            <h1 className="max-w-3xl font-serif text-6xl leading-[.98] tracking-[-.045em] text-navy sm:text-7xl">
-              Never Worry About Taxes Again
+            <h1 className="hero-statement max-w-3xl">
+              Less stress. More clarity.
             </h1>
             <p className="mt-7 max-w-xl text-lg leading-8 text-slate">
               Thoughtful tax preparation and proactive guidance for equity-compensated
