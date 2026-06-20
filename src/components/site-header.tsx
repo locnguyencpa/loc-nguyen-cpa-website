@@ -42,9 +42,8 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <PersonalTaxQuoteButton className="button button-primary px-4 py-3 text-sm sm:px-5">
-            <span className="sm:hidden">Return Quote</span>
-            <span className="hidden sm:inline">Personal Return Quote</span>
+          <PersonalTaxQuoteButton className="button button-primary hidden px-4 py-3 text-sm sm:inline-flex sm:px-5">
+            Personal Return Quote
           </PersonalTaxQuoteButton>
         </div>
       </div>

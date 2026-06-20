@@ -2,20 +2,13 @@ import Link from "next/link";
 import { PersonalTaxQuoteButton } from "@/components/personal-tax-quote-button";
 import { faqs, services, testimonials } from "@/lib/site";
 
-const people = [
-  ["01", "Professionals with Equity", "RSUs, ISOs, NSOs, ESPPs, and concentrated stock positions."],
-  ["02", "Startup Founders", "C corporation compliance, Delaware franchise tax, and practical tax guidance."],
-  ["03", "Small Business Owners", "Practical compliance and planning without unnecessary complexity."],
-];
-
 export default function Home() {
   return (
     <>
       <section className="hero overflow-hidden">
         <div className="shell grid min-h-[720px] items-center gap-16 py-20 lg:grid-cols-[1.1fr_.9fr]">
           <div className="relative z-10">
-            <div className="eyebrow">Clarity for complex tax situations</div>
-            <h1 className="mt-6 max-w-3xl font-serif text-6xl leading-[.98] tracking-[-.045em] text-navy sm:text-7xl">
+            <h1 className="max-w-3xl font-serif text-6xl leading-[.98] tracking-[-.045em] text-navy sm:text-7xl">
               Never Worry About Taxes Again
             </h1>
             <p className="mt-7 max-w-xl text-lg leading-8 text-slate">
@@ -67,24 +60,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section bg-white">
-        <div className="shell">
-          <div className="section-heading">
-            <div className="eyebrow">Who I help</div>
-            <h2>Tax support built around real financial lives.</h2>
-          </div>
-          <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-navy/10 bg-navy/10 lg:grid-cols-3">
-            {people.map(([number, title, text]) => (
-              <div key={title} className="bg-white p-8 sm:p-10">
-                <div className="font-mono text-xs font-bold text-teal">{number}</div>
-                <h3 className="mt-12 font-serif text-2xl text-navy">{title}</h3>
-                <p className="mt-4 leading-7 text-slate">{text}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
