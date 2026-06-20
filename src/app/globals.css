@@ -32,8 +32,7 @@ button, input, select, textarea { font: inherit; }
 .shell { width: min(1180px, calc(100% - 2rem)); margin-inline: auto; }
 .section { padding-block: clamp(5rem, 9vw, 8rem); }
 .hero { background: radial-gradient(circle at 82% 38%, rgba(184,221,209,.5), transparent 29%), linear-gradient(135deg, #f7f4ec 0%, #f3f0e7 100%); }
-.hero-statement { display: flex; align-items: center; gap: 1.25rem; color: var(--teal); font-size: clamp(3.25rem, 7vw, 4.5rem); font-weight: 800; letter-spacing: .08em; line-height: .98; text-transform: uppercase; }
-.hero-statement::before { content: ""; width: 3.5rem; height: 2px; flex: 0 0 3.5rem; background: var(--teal); }
+.hero-statement { color: var(--navy); font-size: clamp(1.15rem, 2vw, 1.45rem); font-weight: 700; letter-spacing: .19em; line-height: 1.2; text-transform: uppercase; }
 .page-hero { position: relative; overflow: hidden; padding-block: 7rem; background: radial-gradient(circle at 50% 120%, rgba(184,221,209,.65), transparent 42%), var(--cream); }
 .page-hero::before { content: ""; position: absolute; width: 16rem; height: 16rem; border: 1px solid rgba(25,117,111,.15); border-radius: 999px; left: -8rem; top: -8rem; }
 .eyebrow { display: flex; align-items: center; gap: .75rem; color: var(--teal); font-size: .75rem; font-weight: 750; letter-spacing: .19em; text-transform: uppercase; }
@@ -115,8 +114,7 @@ button, input, select, textarea { font: inherit; }
 
 @media (max-width: 640px) {
   .shell { width: min(100% - 1.25rem, 1180px); }
-  .hero-statement { gap: .9rem; font-size: 3.3rem; letter-spacing: .06em; }
-  .hero-statement::before { width: 2.5rem; flex-basis: 2.5rem; }
+  .hero-statement { font-size: 1rem; letter-spacing: .16em; }
   .pricing-card { padding: 1.5rem; }
   .bookkeeping-pricing-card { align-items: stretch; flex-direction: column; padding: 1.5rem; }
   .bookkeeping-pricing-action { min-width: 0; }
