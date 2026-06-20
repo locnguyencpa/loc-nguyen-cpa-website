@@ -29,7 +29,7 @@ export function SiteFooter() {
           <div className="footer-title">Start here</div>
           <div className="mt-4 grid gap-3 text-sm text-white/70">
             <PersonalTaxQuoteButton className="text-left">
-              Personal Tax Quote
+              Personal Return Quote
             </PersonalTaxQuoteButton>
             <Link href="/contact">Contact</Link>
             <Link href="/privacy">Privacy policy</Link>

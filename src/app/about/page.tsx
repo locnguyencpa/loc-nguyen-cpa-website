@@ -35,7 +35,7 @@ export default function AboutPage() {
             <p>I have helped clients abate more than $200,000 in penalties across matters involving late-filed partnership returns, Forms 5471 and 5472, and state filings. Past outcomes do not guarantee future results, but they reflect the level of care I bring to a case.</p>
             <p>My practice is designed to be responsive, secure, and straightforward. I aim to acknowledge messages within one business day, and you’ll know what I need, what the work costs, and where things stand.</p>
             <PersonalTaxQuoteButton className="button button-primary mt-5">
-              Get a Personal Tax Quote
+              Get a Personal Return Quote
             </PersonalTaxQuoteButton>
           </div>
         </div>

@@ -43,7 +43,7 @@ export default function PricingPage() {
                 </Link>
               ) : (
                 <PersonalTaxQuoteButton className={`button mt-9 justify-center ${tier.featured ? "button-primary" : "button-secondary"}`}>
-                  Get a Personal Tax Quote
+                  Get a Personal Return Quote
                 </PersonalTaxQuoteButton>
               )}
             </article>

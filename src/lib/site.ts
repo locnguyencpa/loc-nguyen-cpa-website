@@ -13,7 +13,7 @@ export const services = [
       "Federal and state tax preparation for professionals, families, investors, and taxpayers with complex reporting.",
     tag: "Form 1040",
     action: "personalTaxQuote",
-    linkLabel: "Personal Tax Quote",
+    linkLabel: "Personal Return Quote",
   },
   {
     title: "Equity Compensation",
@@ -21,7 +21,7 @@ export const services = [
       "Tax planning and return preparation for RSUs, ISOs, NSOs, and ESPPs.",
     tag: "Tax Planning",
     action: "personalTaxQuote",
-    linkLabel: "Personal Tax Quote",
+    linkLabel: "Personal Return Quote",
   },
   {
     title: "Corporation Tax",

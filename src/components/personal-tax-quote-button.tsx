@@ -22,9 +22,9 @@ export function PersonalTaxQuoteButton({
       embedUrl={personalTaxEmbedUrl}
       formUrl={personalTaxFormUrl}
       eyebrow="Personal income tax"
-      title="Get a personal tax quote"
+      title="Get a personal return quote"
       iframeTitle="Personal income tax quote questionnaire"
-      closeLabel="Close personal tax quote form"
+      closeLabel="Close personal return quote form"
     >
       {children}
     </TallyPopupButton>

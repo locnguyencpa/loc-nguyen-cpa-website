@@ -3,8 +3,8 @@ import Link from "next/link";
 import { PersonalTaxQuoteButton } from "@/components/personal-tax-quote-button";
 
 const nav = [
-  ["Services", "/services"],
   ["Pricing", "/pricing"],
+  ["Services", "/services"],
   ["About", "/about"],
   ["FAQ", "/faq"],
   ["Contact", "/contact"],
@@ -42,20 +42,19 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <details className="mobile-nav lg:hidden">
-            <summary aria-label="Open navigation">Menu</summary>
-            <nav aria-label="Mobile navigation">
-              {nav.map(([label, href]) => (
-                <Link key={href} href={href}>{label}</Link>
-              ))}
-            </nav>
-          </details>
           <PersonalTaxQuoteButton className="button button-primary px-4 py-3 text-sm sm:px-5">
-            <span className="sm:hidden">Tax Quote</span>
-            <span className="hidden sm:inline">Personal Tax Quote</span>
+            <span className="sm:hidden">Return Quote</span>
+            <span className="hidden sm:inline">Personal Return Quote</span>
           </PersonalTaxQuoteButton>
         </div>
       </div>
+      <nav className="mobile-nav-strip shell lg:hidden" aria-label="Mobile navigation">
+        {nav.map(([label, href]) => (
+          <Link key={href} href={href}>
+            {label}
+          </Link>
+        ))}
+      </nav>
     </header>
   );
 }

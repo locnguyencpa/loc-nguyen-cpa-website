@@ -20,7 +20,7 @@ export default function QuotePage() {
             accurate quote.
           </p>
           <PersonalTaxQuoteButton className="button button-primary mt-8">
-            Open Personal Tax Questionnaire <span>→</span>
+            Open Personal Return Questionnaire <span>→</span>
           </PersonalTaxQuoteButton>
           <p className="mt-5 text-xs leading-5 text-slate">
             Do not upload tax documents or include Social Security numbers in

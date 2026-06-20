@@ -25,7 +25,7 @@ export default function Home() {
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <PersonalTaxQuoteButton className="button button-primary">
-                Get a Personal Tax Quote <span>→</span>
+                Get a Personal Return Quote <span>→</span>
               </PersonalTaxQuoteButton>
               <Link href="/services" className="button button-secondary">Explore services</Link>
             </div>
@@ -211,7 +211,7 @@ export default function Home() {
             <h2 className="mt-4 font-serif text-4xl sm:text-5xl">Let’s talk about your taxes.</h2>
           </div>
           <PersonalTaxQuoteButton className="button bg-white text-navy hover:bg-mint">
-            Get a Personal Tax Quote <span>→</span>
+            Get a Personal Return Quote <span>→</span>
           </PersonalTaxQuoteButton>
         </div>
       </section>
