@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import "./globals.css";
@@ -39,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
+        <Script async src="https://tally.so/widgets/embed.js" strategy="afterInteractive" />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
